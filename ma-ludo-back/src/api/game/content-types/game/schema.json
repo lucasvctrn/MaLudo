@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "MinPlayers": {
+      "type": "integer"
+    },
+    "MaxPlayers": {
+      "type": "integer"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Ambiance",
+        "Familial",
+        "Intermédiaire",
+        "Expert"
+      ]
+    },
+    "Location": {
+      "type": "enumeration",
+      "enum": [
+        "Placard",
+        "Table basse - Tiroir",
+        "Table basse - Bac",
+        "Bibliothèque"
+      ]
+    },
+    "Mechanisms": {
+      "type": "customField",
+      "options": [
+        "Stratégie",
+        "Cartes",
+        "Déduction",
+        "Rôles cachés",
+        "Communication",
+        "Mémoire",
+        "Créatif",
+        "Enchères",
+        "Conquêtes",
+        "Bluff",
+        "Quizz",
+        "Coopératif",
+        "Pari",
+        "Narratif",
+        "Rapidité",
+        "Observation",
+        "Dés",
+        "Réactif",
+        "Equipe",
+        "Tuiles",
+        "Collection",
+        "Combinaison",
+        "Placement"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Extensions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::extension.extension"
+    },
+    "Sleeved": {
+      "type": "enumeration",
+      "enum": [
+        "Oui",
+        "Non",
+        "NC"
+      ]
+    },
+    "Duration": {
+      "type": "integer"
+    }
+  }
+}

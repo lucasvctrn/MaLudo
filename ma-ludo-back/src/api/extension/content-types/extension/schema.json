@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "extensions",
+  "info": {
+    "singularName": "extension",
+    "pluralName": "extensions",
+    "displayName": "Extension",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Location": {
+      "type": "enumeration",
+      "enum": [
+        "Placard",
+        "Table basse - Tiroir",
+        "Table basse - Bac",
+        "Bibliothèque"
+      ]
+    },
+    "Game": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game.game"
+    },
+    "Sleeved": {
+      "type": "enumeration",
+      "enum": [
+        "Oui",
+        "Non",
+        "NC"
+      ]
+    }
+  }
+}
