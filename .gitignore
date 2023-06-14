@@ -1,0 +1,36 @@
+### ma-ludo-back ###
+ma-ludo-back/HELP.md
+ma-ludo-back/.gradle
+ma-ludo-back/build/
+ma-ludo-back/!gradle/wrapper/gradle-wrapper.jar
+ma-ludo-back/!**/src/main/**/build/
+ma-ludo-back/!**/src/test/**/build/
+
+### ma-ludo-front ###
+ma-ludo-front/modules
+
+# Nuxt dev/build outputs
+ma-ludo-front/.output
+ma-ludo-front/.nuxt
+ma-ludo-front/.nitro
+ma-ludo-front/.cache
+ma-ludo-front/dist
+
+# Node dependencies
+ma-ludo-front/node_modules
+
+# Logs
+ma-ludo-front/logs
+ma-ludo-front/*.log
+
+# Misc
+ma-ludo-front/.DS_Store
+ma-ludo-front/.fleet
+ma-ludo-front/.idea
+
+# Local env files
+ma-ludo-front/.env.*
+ma-ludo-front/!.env.example
+
+### other ###
+.vscode/
