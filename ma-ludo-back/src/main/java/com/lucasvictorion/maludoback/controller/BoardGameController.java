@@ -1,4 +1,4 @@
-package com.lucasvictorion.maludoback.controllers;
+package com.lucasvictorion.maludoback.controller;
 
 import com.lucasvictorion.maludoback.data.BoardGame;
 import com.lucasvictorion.maludoback.service.BoardGameService;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/board-games")
 public class BoardGameController {
