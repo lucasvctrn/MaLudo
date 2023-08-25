@@ -25,6 +25,9 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.7.2",
-    "eslint": "^8.42.0"
+    "@pinia/nuxt": "^0.4.11",
+    "eslint": "^8.42.0",
+    "jwt-decode": "^3.1.2",
+    "pinia": "^2.1.6"
   }
 }
